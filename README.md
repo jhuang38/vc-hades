@@ -30,7 +30,8 @@ These are laid out in main.py. If you decide to clone this repo and try this by 
 - Regular Stygius damage cycle (dashA + special): 'java'
 - Aspect of Arthur full combo: 'python'
 
-## Potential future features:
+## Potential future features/todo:
 - mouse control
+- demo video
 - support for different screen sizes
 - AI learns to play Hades (very far in the future, I will need to learn more about the details of ML
