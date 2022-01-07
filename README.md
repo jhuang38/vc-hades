@@ -10,19 +10,27 @@ This program works by converting a voice input from the user to text using the P
 ## Controls
 These are laid out in main.py. If you decide to clone this repo and try this by yourself, you can edit the voice mappings there. The ones I have used are listed here:
 
-### General Controls (TBD)
-- Move Right:
-- Move Up:
-- Move Left:
-- Move Down:
-- Dash: 
-- Default Attack:
-- Special: 
-- Cast:
+### General Controls
+- Move Right: 'right'
+- Move Up: 'up'
+- Move Left: 'left'
+- Move Down: 'down'
+- Dash: 'dash'
+- Default Attack: 'hit'
+- Special: 'special'
+- Cast: 'cast'
+- Click Top Option: 'top'
+- Click Middle Option: 'middle'
+- Click Bottom Option: 'bottom'
+- Reroll: 'reroll'
+- Call: 'call'
+- Summon: 'summon'
 
-### Specialized Controls (TBD)
-
+### Specialized Controls
+- Regular Stygius damage cycle (dashA + special): 'java'
+- Aspect of Arthur full combo: 'python'
 
 ## Potential future features:
+- mouse control
 - support for different screen sizes
 - AI learns to play Hades (very far in the future, I will need to learn more about the details of ML
