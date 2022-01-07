@@ -2,8 +2,7 @@
 
 # import modules for pydirectinput, time etc.
 import pydirectinput
-import time
-import pyautogui
+import time 
 import win32api, win32con
 
 # helper to click, as pyadirectinput doesn't work for whatever reason
@@ -40,20 +39,39 @@ def clickReroll():
     click(946, 937)
 
 def moveUp():
-    holdKey('w', 1)
+    holdKey('w', 0.5)
 
 def moveDown():
-    holdKey('s', 1)
+    holdKey('s', 0.5)
 
 def moveRight():
-    holdKey('d', 1)
+    holdKey('d', 0.5)
 
 def moveLeft():
-    holdKey('a', 1)
+    holdKey('a', 0.5)
 
 def dashInput():
     pydirectinput.press('space', presses = 2)
 
+def useAttack():
+    click(-1, -1, 'left')
+
+def useSpecial():
+    pydirectinput.press('q')
+
+def useCast():
+    click(-1, -1, 'right')
+
+def useCall():
+    pydirectinput.press('f')
+
+def interact():
+    pydirectinput.press('e')
+
+def summon():
+    pydirectinput.press('1')
+
+## SPECIALIZED INPUTS
 # for aspect of arthur, 0.45 seems good
 # for other aspects, use 0.2
 def swordFullCombo(timeBetweenClicks):
@@ -61,13 +79,8 @@ def swordFullCombo(timeBetweenClicks):
         click(-1, -1, 'left')
         time.sleep(timeBetweenClicks)
 
-
-
 def swordDashCombo():
     pydirectinput.keyDown('space')
     click(-1, -1, 'left')
     pydirectinput.keyUp('')
     pydirectinput.press('q')
-
-def useCast():
-    click(-1, -1, 'right')
