@@ -18,7 +18,7 @@ def main():
         'right': commands.moveRight,
         'left': commands.moveLeft,
         'dash': commands.dashInput,
-        'attack': commands.useAttack,
+        'hit': commands.useAttack,
         'cast': commands.useCast,
         'special': commands.useSpecial,
         'call': commands.useCall,
@@ -26,8 +26,9 @@ def main():
         'middle': commands.clickMiddleOption,
         'bottom': commands.clickBottomOption,
         'roll': commands.clickReroll,
+        'java': commands.swordDashCombo,
         'python': arthurCombo
-    }
+    } 
     # ask for user input to which weapon they are using - mouse timings and other settings may vary with weapon
     # e.g. arthur is very slow, use separate combo timings
     print("Starting")
@@ -36,7 +37,7 @@ def main():
     while continueLoop:
         try:
             with speech_recognition.Microphone() as mic:
-                recognizer.adjust_for_ambient_noise(mic, duration=0.0001)
+                recognizer.adjust_for_ambient_noise(mic, duration=0.5)
                 audio = recognizer.listen(mic)
                 text = recognizer.recognize_google(audio)
                 text = text.lower()
