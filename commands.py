@@ -38,6 +38,7 @@ def clickBottomOption():
 def clickReroll():
     click(946, 937)
 
+# commands for movement and combat
 def moveUp():
     holdKey('w', 0.5)
 
@@ -84,3 +85,6 @@ def swordDashCombo():
     click(-1, -1, 'left')
     pydirectinput.keyUp('')
     pydirectinput.press('q')
+
+def arthurCombo():
+    swordFullCombo(0.45)

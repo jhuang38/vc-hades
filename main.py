@@ -6,12 +6,9 @@ import pydirectinput
 import speech_recognition
 import pyttsx3
 
-# function for processing which regular attack to use
-def arthurCombo():
-    commands.swordFullCombo(0.45)
-
 def main():
     # dictionary mappings for each command
+    # if you want to change the mappings, change the key value that each command is mapped to
     commandLookup = {
         'up': commands.moveUp,
         'down': commands.moveDown,
@@ -27,7 +24,7 @@ def main():
         'bottom': commands.clickBottomOption,
         'roll': commands.clickReroll,
         'java': commands.swordDashCombo,
-        'python': arthurCombo
+        'python': commands.arthurCombo
     } 
     # ask for user input to which weapon they are using - mouse timings and other settings may vary with weapon
     # e.g. arthur is very slow, use separate combo timings
@@ -51,7 +48,6 @@ def main():
                     elif word == 'quit':
                         continueLoop = False
                         break
-
         except speech_recognition.UnknownValueError:
             recognizer = speech_recognition.Recognizer()
             print("Unrecognized")
