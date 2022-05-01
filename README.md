@@ -25,6 +25,7 @@ These are laid out in main.py. If you decide to clone this repo and try this by 
 - Reroll: 'reroll'
 - Call: 'call'
 - Summon: 'summon'
+- ^ i cannot decide on a short word to use as a command for interacting (e.g. opening doors, etc)
 
 ### Specialized Controls
 - Regular Stygius damage cycle (dashA + special): 'java'
