@@ -34,5 +34,6 @@ These are laid out in main.py. If you decide to clone this repo and try this by 
 ## Potential future features/todo:
 - mouse control
 - demo video
+- support for different games (interested in doing this for P5R since it got a pc port)
 - support for different screen sizes
 - AI learns to play Hades (very far in the future, I will need to learn more about the details of ML
